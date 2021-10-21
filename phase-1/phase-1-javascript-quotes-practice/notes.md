@@ -4,7 +4,7 @@
 2. [x] See a list of quotes (see spec below)
 3. [x] Submit a form to add a new quote to DOM (no persistence)
 4. [x] Click a delete button to remove a quote from the DOM (no persistence)
-5. [] Click a like button to increase the number of likes for a quote (no persistence)
+5. [x] Click a like button to increase the number of likes for a quote (no persistence)
 
 ### Bonus
 - [] Click an edit button which will allow each quote to be edited (form at my discretion)

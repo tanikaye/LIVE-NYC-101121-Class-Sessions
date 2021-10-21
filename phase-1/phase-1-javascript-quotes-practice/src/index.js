@@ -39,7 +39,7 @@ function renderOneQuote(quoteObj){
 
     deleteBtn.addEventListener('click', () => li.remove())
     likeBtn.addEventListener('click', () => handleAddLike(li))
-    
+    // debugger
 
     list.appendChild(li)
 
@@ -70,8 +70,9 @@ function handleNewQuote(e){
 
 function handleAddLike(li){
     const likeSpan= li.querySelector('span')
-    const like = likeSpan.textContent
-    console.log(typeof like)
+    const likes = parseInt(likeSpan.textContent)
+    console.log("likes: ", likes);
+    likeSpan.textContent = likes + 1
 }
 
 // Initializers
