@@ -18,6 +18,11 @@ function getAllRamens(){
         .then(r => r.json())
 }
 
+function getOneRamen(id){
+    return fetch(url + `/${id}`)
+        .then(r => r.json())
+}
+
 // Render functions
 
 function renderAllRamens(ramensArr){
@@ -65,3 +70,4 @@ function handleAddRamen(e){
 
 // Initializers
 getAllRamens().then(renderAllRamens)
+getOneRamen(1).then(renderDetail)
