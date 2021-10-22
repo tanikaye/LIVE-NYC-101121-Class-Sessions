@@ -7,8 +7,8 @@
 5. [x] Click a like button to increase the number of likes for a quote (no persistence)
 
 ### Bonus
-- [] Click an edit button which will allow each quote to be edited (form at my discretion)
-- [] Click a sort button that toggles between sort by id/author (sort on client/server?)
+- [x] Click an edit button which will allow each quote to be edited (form at my discretion)
+- [x] Click a sort button that toggles between sort by id/author (sort on client/server?)
 
 ### Data
 ```javascript
