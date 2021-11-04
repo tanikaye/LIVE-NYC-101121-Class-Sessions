@@ -25,17 +25,17 @@ function BabyHog({name, hobby, eyeColor}) {
     setWeight(newWeight)
   }
 
-  function chooseColor(){
-    let babyImg
-    if (eyeColor == "blue"){
-      babyImg = BlueBaby
-    } else if (eyeColor == "sun") {
-      babyImg = SunBaby
-    } else if (eyeColor == "glowing") {
-      babyImg = GlowingBaby
-    }
-    return babyImg
-  }
+  // function chooseColor(){
+  //   let babyImg
+  //   if (eyeColor == "blue"){
+  //     babyImg = BlueBaby
+  //   } else if (eyeColor == "sun") {
+  //     babyImg = SunBaby
+  //   } else if (eyeColor == "glowing") {
+  //     babyImg = GlowingBaby
+  //   }
+  //   return babyImg
+  // }
 
   // let babyImg;
   // switch (eyeColor){
@@ -65,8 +65,8 @@ function BabyHog({name, hobby, eyeColor}) {
 
       <div className="hb-wrap">
         <img
-          src={chooseColor()}
-          // src={eyeColorMapper[eyeColor]}
+          // src={chooseColor()}
+          src={eyeColorMapper[eyeColor]}
           style={{ height: `${weight}px` }}
           alt="MasterBlasterJrJr"
         />
