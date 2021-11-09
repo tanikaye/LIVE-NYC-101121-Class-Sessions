@@ -1,7 +1,32 @@
 ## Stories
 
+A user can:
+1. [x] See all hog cards w/ name and image
+  - "ui grid container" on parent of all hogs
+  - "ui eight wide column" on children
+2. [x] Click a hog and see more details
+  - HogDetail will be 'added' into HogCard and use semantic-ui
+3. [x] Click an input and see only greased pigs
+4. [x] Use a dropdown to sort by name or weight
+
+_Note:_ User can both filter and sort the filtered results.
+
+BONUS: Hide hogs (no persistence, don't have to bring back!)
+    - If we do this, we can track when a user clicks a HIDE button in HogTile
+    - A HogTile will need state
+    - change of state could change the display style for that component
+- Add new hogs using a form
+
 
 ## Structure
+* mean many of same component
+
+- App (state: filter and sort options)
+ - Header (renamed from Nav)
+ - Filter (events: update filter and sort options on App)
+ - HogList (props: filtered and/or sorted list of hogs)
+  - HogCard*
+  - HogDetails*
 
 
 **Reasoning:**
