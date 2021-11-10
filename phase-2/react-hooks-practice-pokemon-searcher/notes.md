@@ -1,8 +1,8 @@
 ## Stories
 A user can:
-- view all pokemon cards (name, sprite, hp)
-- click card to toggle front/back sprite display
-- search for a pokemon by name
+- [x] view all pokemon cards (name, sprite, hp)
+- [x] click card to toggle front/back sprite display
+- [x] search for a pokemon by name
 - add a new pokemon with a form
 
 ## Data
