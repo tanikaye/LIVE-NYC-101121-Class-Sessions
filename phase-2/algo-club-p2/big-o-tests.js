@@ -8,10 +8,11 @@ let sqcount2 = 0
 function smallestNumNSquared(arr){
     let smallest
     for (let num of arr){
+        sqcount += 1
         for (let innerNum of arr){
             smallest = true
             sqcount += 1
-            if (num > innerNum) {
+            if (innerNum < num) {
                 smallest = false
                 break
             }
@@ -25,7 +26,7 @@ function smallestNumN(arr){
     for (let num of arr){
         lincount += 1
         if (num < smallest){
-            smallest = num
+           smallest = num
         }
     }
     return smallest
@@ -38,8 +39,8 @@ function smallestNSquaredObscure(arr){
         sqcount2 += 1
         if (arr.filter(checkNum => {
             sqcount2 += 1
-            checkNum < num
-        }).length == 0){
+           return checkNum < num
+        }).length === 0){
             return num
         }
     }

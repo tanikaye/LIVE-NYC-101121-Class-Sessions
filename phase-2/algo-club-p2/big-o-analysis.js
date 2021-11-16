@@ -20,6 +20,7 @@ function findSmallest1(arr){
         if (smallest) {return num}
     }
 }
+// Time complexity: O(n**2) Quadratic
 
 function findSmallest2(arr){
     let smallest = Infinity
@@ -30,6 +31,7 @@ function findSmallest2(arr){
     }
     return smallest
 }
+// Time complexity: O(n) Linear
 
 function findSmallest3(arr){
     for (let num of arr){
@@ -40,4 +42,5 @@ function findSmallest3(arr){
         }
     }
 }
+// Time complexity: O(n^2) Quadratic
 
