@@ -78,12 +78,12 @@ Create a `Computer` class with the following behavior:
 
 ### Additional Instance Methods
 
-- `Computer#upgrade_memory(RAM)`: takes a hash ({model: String, size: Integer}) and adds the size of the RAM to the computer's memory
+- `Computer#upgrade_memory(RAM)`: takes a hash (`{model: String, size: Integer}`) and adds the size of the RAM to the computer's memory
 
-- `Computer#disk_full?(file_size)`: receives a file_size number and returns `true` if the free storage space is less than the file size; otherwise returns false
+- `Computer#disk_full?(file_size)`: receives a file_size number and returns `true` if the free storage space is less than the file size; otherwise returns `false`.
 
-- `Computer#save_file(file)`: given a file hash ({name: String, size: Number}), this method will first use a helper method to check whether the disk has enough space to save the file. If there _is_ enough space, reduce the value of `storage_free` by the file size and return the string `"#{file[:name]} has been saved!"`, but if there is not enough space, return the string `"There is not enough space on disk to save #{file[:name]}."`
+- `Computer#save_file(file)`: given a file hash (`{name: String, size: Number}`), this method will first use a helper method to check whether the disk has enough space to save the file. If there _is_ enough space, reduce the value of `storage_free` by the file size and return the string `"#{file[:name]} has been saved!"`, but if there is not enough space, return the string `"There is not enough space on disk to save #{file[:name]}."`
 
-- `Computer#delete_file(file)`: given a file hash ({name: String, size: Integer}), make the appropriate adjustment to the free storage size and return a string confirming that the file has been deleted which includes the file's name.
+- `Computer#delete_file(file)`: given a file hash (`{name: String, size: Number}`), make the appropriate adjustment to the free storage size and return a string confirming that the file has been deleted which includes the file's name.
 
 - `Computer#specs`: returns a string which includes both the current memory and free storage, both in gigabytes.
